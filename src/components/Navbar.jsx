@@ -13,16 +13,16 @@ const Navbar = () => {
           <Link to="/BlogList">Kino</Link>
         </div>
         <div>
-          <a href="/Favs">Favs</a>
+          <Link to="/Favs">Favs</Link>
         </div>
         <div>
-          <a href="/MustWatch">Must Watch</a>
+          <Link to="/MustWatch">Must Watch</Link>
         </div>
         <div>
-          <a href="/">Login/Signup</a>
+          <Link to="/">Login/Logout</Link>
         </div>
         <div>
-          <a href="/dashboard">Dashboard</a>
+          <Link to="/Dashboard">Dashboard</Link>
         </div>
         <div>
           {isAuthenticated ? (
