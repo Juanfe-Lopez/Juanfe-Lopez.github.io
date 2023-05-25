@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <header>
         <div className="brand">
-        <Link to="/BlogList">Kino</Link>
+          <Link to="/BlogList">Kino</Link>
         </div>
         <div>
           <a href="/Favs">Favs</a>
