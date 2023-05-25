@@ -3,7 +3,7 @@ import Funciones, { getData } from "../functions/functions";
 import "./BlogList.css";
 import { addToFirebase } from "../functions/firebaseHelper";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 function BlogList() {
   const [movies, setMovies] = useState([]);
@@ -40,9 +40,9 @@ function BlogList() {
               <div className="product">
                 <img src={movie.image} />
 
-                <a className="product-name" href={`/BlogPost/${movie.id}`}>
+                <Link className="product-name" to={`/BlogPost/${movie.id}`}>
                   {movie.title}
-                </a>
+                </Link>
 
                 <div className="product-price">{movie.rating}</div>
                 <div>
