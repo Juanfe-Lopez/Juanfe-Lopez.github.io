@@ -32,7 +32,7 @@ function App() {
             <Route path={user ? "/BlogList" : "/"} element={<BlogList />} />
             <Route path={user ? "/Favs" : "/"} element={<Favs />} />
             <Route path={user ? "/MustWatch" : "/"} element={<MustWatch />} />
-            <Route path={user ? "/BlogPost" : "/"} element={<BlogPost />} />
+            <Route path={user ? "/BlogPost/:id" : "/"} element={<BlogPost />} />
             <Route path={user ? "/dashboard" : "/"} element={<Dashboard />} />
           </Routes>
         </div>
